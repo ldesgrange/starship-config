@@ -1,0 +1,269 @@
+# Inserts a blank line between shell prompts
+add_newline = false
+
+format = """
+[ ](fg:color1 bg:color3)\
+$time\
+[ ](fg:color3 bg:color4)\
+$username\
+$os\
+$hostname\
+[ ](fg:color2 bg:color4)\
+$battery\
+[ ](fg:color4 bg:color5)\
+$directory\
+[ ](fg:color5 bg:color6)\
+$git_branch\
+$git_status\
+[ ](fg:color6 bg:color7)\
+$nodejs\
+$rust\
+$golang\
+$php\
+[ ](fg:color7 bg:color8)\
+$cmd_duration\
+[ ](fg:color8)\
+\n$character"""
+
+palette = 'tokyo'
+
+[palettes.tokyo]
+warning = '#ff7700'
+danger = '#ff0000'
+color0 = '#e3e5e5'
+color1 = '#b2eaff'
+color2 = '#99c9db'
+color3 = '#7fa7b6'
+color4 = '#668692'
+color5 = '#4c646d'
+color6 = '#334349'
+color7 = '#192124'
+color8 = '#000000'
+
+[aws]
+symbol = "  "
+
+[battery]
+#full_symbol = '󰁹'
+charging_symbol = '󰂄'
+#discharging_symbol = '󱟟'
+discharging_symbol = '󱟤'
+unknown_symbol = '󰂁' # plugged-in, not charging but not full
+#empty_symbol = '󰂎'
+empty_symbol = '󰂃'
+format = '[$symbol ]($style)'
+
+[[battery.display]]
+style = 'fg:color0 bg:color4'
+threshold = 100
+
+[[battery.display]]
+style = 'fg:warning bg:color2'
+threshold = 40
+
+[[battery.display]]
+style = 'fg:danger bg:color2'
+threshold = 20
+
+[buf]
+symbol = " "
+
+[c]
+symbol = " "
+
+[cmd_duration]
+min_time = 0
+style = "fg:color0 bg:color8"
+format = '[$duration]($style)'
+
+[conda]
+symbol = " "
+
+[dart]
+symbol = " "
+
+[directory]
+read_only = "󰌾"
+style = "fg:color0 bg:color5"
+read_only_style = "fg:color0 bg:color5"
+format = "[$path]($style)[$read_only]($read_only_style)"
+truncation_length = 5
+truncation_symbol = "…/"
+
+[directory.substitutions]
+"Documents" = "󰈙 "
+"Downloads" = " "
+"Music" = " "
+"Pictures" = " "
+
+[docker_context]
+symbol = " "
+
+[elixir]
+symbol = " "
+
+[elm]
+symbol = " "
+
+[fossil_branch]
+symbol = " "
+
+[git_branch]
+symbol = " "
+style = "fg:color0 bg:color6"
+format = '[$symbol$branch(:$remote_branch)]($style)'
+
+[git_status]
+style = "fg:color0 bg:color6"
+format = '[\[($all_status$ahead_behind)\]]($style)'
+#conflicted = "⚔️ "
+#ahead = "🏎️ 💨 ×${count}"
+#behind = "🐢 ×${count}"
+#diverged = "🔱 🏎️ 💨 ×${ahead_count} 🐢 ×${behind_count}"
+#untracked = "󰵤×${count}"
+untracked = "󰞋×${count}"
+#stashed = "📦 "
+#modified = "×${count}"
+modified = "󰏬×${count}"
+#staged = "×${count}"
+staged = "󰋠×${count}"
+#renamed = "×${count}"
+renamed = "󰛂×${count}"
+deleted = "×${count}"
+
+[golang]
+symbol = " "
+style = "fg:color0 bg:color7"
+format = '[$symbol($version)]($style)'
+
+[guix_shell]
+symbol = " "
+
+[haskell]
+symbol = " "
+
+[haxe]
+symbol = "⌘ "
+
+[hg_branch]
+symbol = " "
+
+[hostname]
+ssh_only = false
+ssh_symbol = ""
+style = 'fg:color0 bg:color4'
+format = '[$hostname$ssh_symbol]($style)'
+
+[java]
+symbol = " "
+
+[julia]
+symbol = " "
+
+[lua]
+symbol = " "
+
+[memory_usage]
+symbol = "󰍛 "
+
+[meson]
+symbol = "󰔷 "
+
+[nim]
+symbol = "󰆥 "
+
+[nix_shell]
+symbol = " "
+
+[nodejs]
+symbol = " "
+style = "fg:color0 bg:color7"
+format = '[$symbol($version)]($style)'
+
+[os]
+disabled = false
+style = 'fg:color0 bg:color4'
+format = '[$symbol]($style)'
+
+[os.symbols]
+Alpaquita = ""
+Alpine = ""
+Amazon = ""
+Android = ""
+Arch = ""
+Artix = ""
+CentOS = ""
+Debian = ""
+DragonFly = ""
+Emscripten = ""
+EndeavourOS = ""
+Fedora = ""
+FreeBSD = ""
+Garuda = "󰛓"
+Gentoo = ""
+HardenedBSD = "󰞌"
+Illumos = "󰈸"
+Linux = ""
+Mabox = ""
+Macos = ""
+Manjaro = ""
+Mariner = ""
+MidnightBSD = ""
+Mint = ""
+NetBSD = ""
+NixOS = ""
+OpenBSD = "󰈺"
+openSUSE = ""
+OracleLinux = "󰌷"
+Pop = ""
+Raspbian = ""
+Redhat = ""
+RedHatEnterprise = ""
+Redox = "󰀘"
+Solus = "󰠳"
+SUSE = ""
+Ubuntu = ""
+Unknown = ""
+Windows = "󰍲"
+
+[package]
+symbol = "󰏗 "
+
+[pijul_channel]
+symbol = "🪺 "
+
+[php]
+symbol = ""
+style = "fg:color0 bg:color7"
+format = '[$symbol($version)]($style)'
+
+[python]
+symbol = " "
+
+[rlang]
+symbol = "󰟔 "
+
+[ruby]
+symbol = " "
+
+[rust]
+symbol = " "
+style = "fg:color0 bg:color7"
+format = '[$symbol($numver)]($style)'
+
+[scala]
+symbol = " "
+
+[spack]
+symbol = "🅢 "
+
+[time]
+disabled = false
+time_format = "%R" # Hour:Minute Format
+style = "fg:color0 bg:color3"
+format = '[$time ]($style)'
+
+[username]
+style_root = 'fg:danger bg:color4'
+style_user = 'fg:color0 bg:color4'
+format = '[$user]($style)'
