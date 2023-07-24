@@ -134,16 +134,12 @@ format = '[\[($all_status$ahead_behind)\]]($style)'
 ahead = '⇡×${count}'
 behind = '⇣×${count}'
 #diverged = "🔱 🏎️ 💨 ×${ahead_count} 🐢 ×${behind_count}"
-#untracked = "󰵤×${count}"
 untracked = "󰞋×${count}"
-#stashed = "📦 "
-#modified = "×${count}"
+stashed = "×${count}"
 modified = "󰏬×${count}"
-#staged = "×${count}"
 staged = "󰋠×${count}"
-#renamed = "×${count}"
 renamed = "󰛂×${count}"
-deleted = "×${count}"
+deleted = "×${count}"
 
 [golang]
 symbol = " "
