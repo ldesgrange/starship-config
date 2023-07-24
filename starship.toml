@@ -31,18 +31,18 @@ $cmd_duration\
 palette = 'tokyo'
 
 [palettes.tokyo]
-repo_root = '#f14e32' # Taken from git logo color
+repo_root = '#e3e5e5'
 warning = '#ff7700'
 danger = '#ff0000'
 color0 = '#e3e5e5'
-color1 = '#b2eaff'
-color2 = '#99c9db'
-color3 = '#7fa7b6'
-color4 = '#668692'
-color5 = '#4c646d'
-color6 = '#334349'
-color7 = '#192124'
-color8 = '#000000'
+color1 = '#30C5D2'
+color2 = '#33ABC3'
+color3 = '#3791B4'
+color4 = '#3A77A5'
+color5 = '#3D5E96'
+color6 = '#404487'
+color7 = '#442A78'
+color8 = '#471069'
 
 [aws]
 symbol = "  "
@@ -89,7 +89,7 @@ symbol = " "
 [directory]
 read_only = "󰌾"
 style = "fg:color0 bg:color5"
-repo_root_style = "fg:repo_root bg:color5"
+repo_root_style = "fg:repo_root bold bg:color5"
 read_only_style = "fg:color0 bg:color5"
 repo_root_format = '[$before_root_path]($before_repo_root_style)[$repo_root]($repo_root_style)[$path]($style)[$read_only]($read_only_style)'
 format = "[$path]($style)[$read_only]($read_only_style)"
@@ -142,7 +142,7 @@ renamed = "󰛂×${count}"
 deleted = "×${count}"
 
 [golang]
-symbol = " "
+symbol = ""
 style = "fg:color0 bg:color7"
 format = '[$symbol($version)]($style)'
 
@@ -186,7 +186,7 @@ symbol = "󰆥 "
 symbol = " "
 
 [nodejs]
-symbol = " "
+symbol = ""
 style = "fg:color0 bg:color7"
 format = '[$symbol($version)]($style)'
 
@@ -257,7 +257,7 @@ symbol = "󰟔 "
 symbol = " "
 
 [rust]
-symbol = " "
+symbol = ""
 style = "fg:color0 bg:color7"
 format = '[$symbol($numver)]($style)'
 
