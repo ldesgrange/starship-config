@@ -19,10 +19,11 @@ $directory\
 $git_branch\
 $git_status\
 [ ](fg:color6 bg:color7)\
-$nodejs\
-$rust\
 $golang\
+$nodejs\
 $php\
+$python\
+$rust\
 [ ](fg:color7 bg:color8)\
 $cmd_duration\
 [ ](fg:color8)\
@@ -248,7 +249,9 @@ style = "fg:color0 bg:color7"
 format = '[$symbol($version)]($style)'
 
 [python]
-symbol = " "
+symbol = ''
+style = "fg:color0 bg:color7"
+format = '[${symbol}${pyenv_prefix}(${version})( \($virtualenv\))]($style)'
 
 [rlang]
 symbol = "󰟔 "
