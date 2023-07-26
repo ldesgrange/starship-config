@@ -13,7 +13,7 @@ Find icons in Nerd font: https://www.nerdfonts.com/cheat-sheet
 
 [Download a font](https://www.nerdfonts.com/font-downloads) like FiraCode Nerd Font and unzip it.
 
-- 🪟: select the fonts → right click → install
+- 🪟: select the fonts → right click → install for all users (clicking on “install” instead will prevent the terminal to find the fonts after a reboot)
 - 🐧: move the fonts folder to `/usr/share/fonts/truetype/` then change the ownership to `root` (`sudo chown -R root:root /usr/share/fonts/truetype/FiraCode`)
 
 Then configure your terminal software to use the font.
