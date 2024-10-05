@@ -1,7 +1,7 @@
 # Inserts blank line between shell prompts.
 add_newline = false
 # Timeout for starship to scan files (in milliseconds).
-scan_timeout = 100
+scan_timeout = 200
 
 format = """
 [ ](fg:color1 bg:color3)\
