@@ -19,6 +19,7 @@ $directory\
 $git_branch\
 $git_status\
 [ ](fg:color6 bg:color7)\
+$c\
 $golang\
 $nodejs\
 $php\
@@ -74,7 +75,10 @@ threshold = 20
 symbol = " "
 
 [c]
-symbol = " "
+disabled = false
+symbol = ""
+style = "fg:color0 bg:color7"
+format = '[$symbol($version)]($style)'
 
 [cmd_duration]
 min_time = 0
