@@ -161,6 +161,7 @@ deleted = "×${count}"
 disabled = false
 symbol = ""
 style = "fg:color0 bg:color7"
+not_capable_style = "fg:danger bg:color7"
 format = '[$symbol($version)]($style)'
 
 [guix_shell]
@@ -218,6 +219,7 @@ symbol = " "
 disabled = false
 symbol = ""
 style = "fg:color0 bg:color7"
+not_capable_style = "fg:danger bg:color7"
 format = '[$symbol($version)]($style)'
 
 [os]
