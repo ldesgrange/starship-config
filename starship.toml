@@ -47,6 +47,7 @@ color7 = '#442A78'
 color8 = '#471069'
 
 [aws]
+disabled = true
 symbol = "  "
 
 [battery]
@@ -72,6 +73,7 @@ style = 'fg:danger bg:color2'
 threshold = 20
 
 [buf]
+disabled = true
 symbol = " "
 
 [c]
@@ -81,14 +83,17 @@ style = "fg:color0 bg:color7"
 format = '[$symbol($version)]($style)'
 
 [cmd_duration]
+disabled = false
 min_time = 0
 style = "fg:color0 bg:color8"
 format = '[$duration]($style)'
 
 [conda]
+disabled = true
 symbol = " "
 
 [dart]
+disabled = true
 symbol = " "
 
 [directory]
@@ -115,24 +120,30 @@ truncate_to_repo = false
 'Videos' = ''
 
 [docker_context]
+disabled = true
 symbol = " "
 
 [elixir]
+disabled = true
 symbol = " "
 
 [elm]
+disabled = true
 symbol = " "
 
 [fossil_branch]
+disabled = true
 symbol = " "
 
 [git_branch]
+disabled = false
 #symbol = ' '
 symbol = '󰊢'
 style = "fg:color0 bg:color6"
 format = '[$symbol$branch(:$remote_branch)]($style)'
 
 [git_status]
+disabled = false
 style = "fg:color0 bg:color6"
 format = '[\[($all_status$ahead_behind)\]]($style)'
 #conflicted = "⚔️ "
@@ -147,50 +158,64 @@ renamed = "󰛂×${count}"
 deleted = "×${count}"
 
 [golang]
+disabled = false
 symbol = ""
 style = "fg:color0 bg:color7"
 format = '[$symbol($version)]($style)'
 
 [guix_shell]
+disabled = true
 symbol = " "
 
 [haskell]
+disabled = true
 symbol = " "
 
 [haxe]
+disabled = true
 symbol = "⌘ "
 
 [hg_branch]
+disabled = true
 symbol = " "
 
 [hostname]
+disabled = false
 ssh_only = false
 ssh_symbol = ""
 style = 'fg:color0 bg:color4'
 format = '[$hostname$ssh_symbol]($style)'
 
 [java]
+disabled = true
 symbol = " "
 
 [julia]
+disabled = true
 symbol = " "
 
 [lua]
+disabled = true
 symbol = " "
 
 [memory_usage]
+disabled = true
 symbol = "󰍛 "
 
 [meson]
+disabled = true
 symbol = "󰔷 "
 
 [nim]
+disabled = true
 symbol = "󰆥 "
 
 [nix_shell]
+disabled = true
 symbol = " "
 
 [nodejs]
+disabled = false
 symbol = ""
 style = "fg:color0 bg:color7"
 format = '[$symbol($version)]($style)'
@@ -245,33 +270,41 @@ Windows = "󰍲"
 symbol = "󰏗 "
 
 [pijul_channel]
+disabled = true
 symbol = "🪺 "
 
 [php]
+disabled = false
 symbol = ""
 style = "fg:color0 bg:color7"
 format = '[$symbol($version)]($style)'
 
 [python]
+disabled = false
 symbol = ''
 style = "fg:color0 bg:color7"
 format = '[${symbol}${pyenv_prefix}(${version})( \($virtualenv\))]($style)'
 
 [rlang]
+disabled = true
 symbol = "󰟔 "
 
 [ruby]
+disabled = true
 symbol = " "
 
 [rust]
+disabled = false
 symbol = ""
 style = "fg:color0 bg:color7"
 format = '[$symbol($numver)]($style)'
 
 [scala]
+disabled = true
 symbol = " "
 
 [spack]
+disabled = true
 symbol = "🅢 "
 
 [sudo]
@@ -287,6 +320,7 @@ style = "fg:color0 bg:color3"
 format = '[$time ]($style)'
 
 [username]
+disabled = false
 style_root = 'fg:danger bg:color4'
 style_user = 'fg:color0 bg:color4'
 format = '[$user]($style)'
