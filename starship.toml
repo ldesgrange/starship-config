@@ -65,11 +65,11 @@ style = 'fg:color0 bg:color4'
 threshold = 100
 
 [[battery.display]]
-style = 'fg:warning bg:color2'
+style = 'fg:warning bg:color4'
 threshold = 40
 
 [[battery.display]]
-style = 'fg:danger bg:color2'
+style = 'fg:danger bg:color4'
 threshold = 20
 
 [buf]
